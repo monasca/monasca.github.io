@@ -1,13 +1,31 @@
-<div id="nav-wrapper">
-	<!-- Nav -->
-	<nav id="nav">
-		<ul>
-			{% assign current = page.url | downcase | split: '/' %}
-			<li {% if current[1] == 'index.html' %}class='current'{% endif %}><a href="/index.html">Homepage</a></li>
-			<li {% if current[1] == 'blog' %}class='current'{% endif %}><a href="/blog">Blog</a></li>
-			<li {% if current[1] == 'left-sidebar.html' %}class='current'{% endif %}><a href="/left-sidebar.html">Left Sidebar</a></li>
-			<li {% if current[1] == 'right-sidebar.html' %}class='current'{% endif %}><a href="/right-sidebar.html">Right Sidebar</a></li>
-			<li {% if current[1] == 'no-sidebar.html' %}class='current'{% endif %}><a href="/no-sidebar.html">No Sidebar</a></li>
-		</ul>
-	</nav>
-</div>
+{% assign current = page.url | downcase | split: '/' %}
+<ul class="nav navbar-nav">
+  {% for entry in site.data.nav %}
+  {% assign part = entry.href | downcase | split: '/' %}
+  {% if entry.children %}
+  <li class="dropdown{% if current[1] and current[1] == part[1] %} active{% endif %}">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+       role="button" aria-haspopup="true" aria-expanded="true">
+      {{ entry.text }} <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      {% for child in entry.children %}
+      {% if child.divider %}
+      <li role="separator" class="divider"></li>
+      {% endif %}
+      {% if child.header %}
+      <li class="dropdown-header">{{ child.header }}</li>
+      {% endif %}
+      {% if child.text %}
+      <li><a href="{{ child.href | relative_url }}">{{ child.text }}</a>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  <li>
+  {% else %}
+  <li {% if current[1] == part[1] %}class="active"{% endif %}>
+    <a href="{{ entry.href | relative_url }}">{{ entry.text }}</a>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>

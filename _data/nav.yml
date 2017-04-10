@@ -1,0 +1,14 @@
+- text: Home
+  href: /index.html
+- text: About
+  href: /about.html
+- text: Docs
+  href: /docs
+  children:
+    - text: Overview
+      href: /docs/index.html
+    - divider: true
+    - text: Getting Started
+      href: /docs/getting-started.html
+    - text: Deploying
+      href: /docs/deploying.html

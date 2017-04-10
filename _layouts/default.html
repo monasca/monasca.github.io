@@ -7,56 +7,66 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 <html>
 
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="{{ '/assets/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ '/assets/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ '/assets/css/font-awesome.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ '/assets/css/monasca.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ '/assets/css/syntax.css' | relative_url }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900" rel="stylesheet" type="text/css">
+
     {% if page.title %}
       <title>{{ page.title }} &mdash; Monasca</title>
     {% else %}
       <title>Monasca</title>
     {% endif %}
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900" rel="stylesheet" type="text/css">
-    <noscript>
-      <link rel="stylesheet" href="/assets/css/skel-noscript.css" />
-      <link rel="stylesheet" href="/assets/css/style.css" />
-      <link rel="stylesheet" href="/assets/css/style-desktop.css" />
-    </noscript>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="/assets/js/skel.min.js"></script>
-    <script src="/assets/js/skel-panels.min.js"></script>
-    <script src="/assets/js/init.js"></script>
   </head>
 
+  {% assign header = page.header | default: "small" %}
   <body>
-    {% assign header = page.header | default: "small" %}
-    <div id="header" class="header-{{ header }}">
-      {% include nav.html %}
-      <div class="container">
-        {% include header-{{ header }}.html %}
+    <div class="monasca-header monasca-header-{{ header }}">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            {% include nav.html %}
+          </div>
+        </div>
+      </nav>
+      <div class="jumbotron">
+        <div class="container">
+          {% include header-{{ header }}.html %}
+        </div>
       </div>
     </div>
 
     {{ content }}
 
-    <!-- Tweet -->
-    <div id="tweet">
-      <div class="container">
-        <section>
-          <blockquote>&ldquo;In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat.&rdquo;</blockquote>
-        </section>
-      </div>
-    </div>
-
     <!-- Copyright -->
-    <div id="copyright">
+    <div class="jumbotron copyright">
       <div class="container">
-        <p>&copy; 2017 Hewlett-Packard Enterprise Development LP</p>
+        <span>&copy; 2017 Hewlett-Packard Enterprise Development LP</span>
+        <br>
         Design: <a href="http://templated.co">TEMPLATED</a>
         Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>), <a href="https://www.toptal.com">Toptal</a> (CC BY-SA)
         Jekyll Template: <a href="http://cloudcannon.com">Cloud Cannon</a>
       </div>
     </div>
 
+    <script src="{{ '/assets/js/jquery-3.2.0.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/bootstrap.min.js' | relative_url }}"></script>
   </body>
 
 </html>
