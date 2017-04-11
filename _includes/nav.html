@@ -30,7 +30,11 @@
             <li class="dropdown-header">{{ child.header }}</li>
             {% endif %}
             {% if child.text %}
+            {% if child.href %}
             <li><a href="{{ child.href | relative_url }}">{{ child.text }}</a>
+            {% elsif child.exthref %}
+            <li><a href="{{ child.exthref }}">{{ child.text }}</a></li>
+            {% endif %}
             {% endif %}
             {% endfor %}
           </ul>

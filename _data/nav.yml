@@ -11,6 +11,7 @@
     - text: Getting Started
       href: /docs/getting-started.html
     - divider: true
+    - header: Features
     - text: Alarms
       href: /docs/alarms.html
     - text: Aggregation
@@ -26,6 +27,14 @@
       href: /docs/docker.html
     - text: Kubernetes
       href: /docs/kubernetes.html
+    - divider: true
+    - header: Instrumentation
+    - text: Monasca Agent
+      href: /docs/agent.html
+    - text: Prometheus
+      href: /docs/prometheus.html
+    - text: StatsD
+      href: /docs/statsd.html
 
     - break: true
     - header: Development
@@ -33,3 +42,11 @@
       href: /docs/architecture.html
     - text: Contributing
       href: /docs/contributing.html
+    - divider: true
+    - header: External Links
+    - text: OpenStack
+      exthref: http://openstack.org
+    - text: Wiki
+      exthref: https://wiki.openstack.org/wiki/Monasca
+    - text: GitHub
+      exthref: https://github.com/monasca/
