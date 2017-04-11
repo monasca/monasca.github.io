@@ -5,10 +5,31 @@
 - text: Docs
   href: /docs
   children:
+    - header: Getting Started
     - text: Overview
       href: /docs/index.html
-    - divider: true
     - text: Getting Started
       href: /docs/getting-started.html
-    - text: Deploying
-      href: /docs/deploying.html
+    - divider: true
+    - text: Alarms
+      href: /docs/alarms.html
+    - text: Aggregation
+      href: /docs/aggregation.html
+    - text: Logging
+      href: /docs/logging.html
+
+    - break: true
+    - header: Environments
+    - text: OpenStack
+      href: /docs/openstack.html
+    - text: Docker
+      href: /docs/docker.html
+    - text: Kubernetes
+      href: /docs/kubernetes.html
+
+    - break: true
+    - header: Development
+    - text: Architecture
+      href: /docs/architecture.html
+    - text: Contributing
+      href: /docs/contributing.html

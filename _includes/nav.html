@@ -8,18 +8,34 @@
        role="button" aria-haspopup="true" aria-expanded="true">
       {{ entry.text }} <span class="caret"></span>
     </a>
-    <ul class="dropdown-menu">
-      {% for child in entry.children %}
-      {% if child.divider %}
-      <li role="separator" class="divider"></li>
-      {% endif %}
-      {% if child.header %}
-      <li class="dropdown-header">{{ child.header }}</li>
-      {% endif %}
-      {% if child.text %}
-      <li><a href="{{ child.href | relative_url }}">{{ child.text }}</a>
-      {% endif %}
-      {% endfor %}
+    {% assign cols = 1 %}
+    {% for child in entry.children %}
+    {% if child.break %}{% assign cols = cols | plus: 1 %}{% endif %}
+    {% endfor %}
+    <ul class="dropdown-menu multi-column columns-{{ cols }}">
+      <div class="row">
+        <div class="col-sm-4">
+            <ul class="multi-column-dropdown">
+            {% for child in entry.children %}
+            {% if child.break %}
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <ul class="multi-column-dropdown">
+            {% endif %}
+            {% if child.divider %}
+            <li role="separator" class="divider"></li>
+            {% endif %}
+            {% if child.header %}
+            <li class="dropdown-header">{{ child.header }}</li>
+            {% endif %}
+            {% if child.text %}
+            <li><a href="{{ child.href | relative_url }}">{{ child.text }}</a>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
     </ul>
   <li>
   {% else %}
