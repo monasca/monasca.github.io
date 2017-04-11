@@ -11,27 +11,43 @@ header: large
           <h2>Monitoring as-a-service, at scale</h2>
         </div>
         <p>
-          text text text
+          Monasca is a monitoring solution designed for service-provider levels
+          of metric throughput.
         </p>
         <hr>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-4">
-        <span class="pennant"><span class="fa fa-group"></span></span>
-        <h3>Multi-tenant</h3>
-        <p>Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
-      </div>
-      <div class="col-lg-4">
         <span class="pennant"><span class="fa fa-server"></span></span>
         <h3>Highly scalable</h3>
-        <p>Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec magna.</p>
-        <a href="#" class="btn btn-lg btn-success">Read More</a>
+        <p>
+          Microservice architecture scales both horizontally and vertically to
+          process hundreds of thousands of metrics per second.
+        </p>
       </div>
       <div class="col-lg-4">
         <span class="pennant"><span class="fa fa-database"></span></span>
         <h3>Fault tolerant</h3>
-        <p>Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
+        <p>
+          Each microservice built with reliability and high-availability in
+          mind. Retain data over a year without sacrificing performance or
+          reliability.
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <span class="pennant"><span class="fa fa-group"></span></span>
+        <h3>Multi-tenant</h3>
+        <p>
+          Metrics are authenticated via
+          <a href="https://docs.openstack.org/developer/keystone/">Keystone</a>
+          and scoped to individiual tenants.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <a href="#" class="btn btn-lg btn-success text-center">Read More</a>
       </div>
     </div>
   </div>
@@ -45,22 +61,39 @@ header: large
       <p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
     </div>
     <div class="col-lg-6">
-      <a href="#"><img class="img-responsive" src="{{ '/assets/images/ship.jpg' | relative_url }}" alt=""></a>
+      <a href="{{ '/docs/kubernetes.html' | relative_url }}">
+        <img class="img-responsive" src="{{ '/assets/images/ship.jpg' | relative_url }}" alt="ship">
+      </a>
       <h2>Deploying in Kubernetes</h2>
-      <p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
+      <p>
+        Deploy Monasca to your Kubernetes cluster in minutes using Helm.
+        <a href="{{ '/docs/kubernetes.html' | relative_url }}">More...</a>
+      </p>
     </div>
   </div>
 
   <div class="row">
     <div class="col-lg-6">
-      <a href="#"><img class="img-responsive" src="{{ '/assets/images/pic03.jpg' | relative_url}}" alt=""></a>
-      <h2>Mauris vulputate dolor</h2>
-      <p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
+      <a href="{{ '/docs/prometheus.html' | relative_url }}">
+        <img class="img-responsive" src="{{ '/assets/images/flame.jpg' | relative_url}}" alt="flame">
+      </a>
+      <h2>Monitoring Prometheus Endpoints</h2>
+      <p>
+        Use Monasca to monitoring your existing Prometheus exporters and
+        instrumented applications.
+        <a href="{{ '/docs/prometheus.html' | relative_url }}">More...</a>
+      </p>
     </div>
     <div class="col-lg-6">
-      <a href="#"><img class="img-responsive" src="{{ '/assets/images/whale.jpg' | relative_url}}" alt=""></a>
+      <a href="{{ '/docs/docker.html' | relative_url }}">
+        <img class="img-responsive" src="{{ '/assets/images/whale.jpg' | relative_url}}" alt="whale">
+      </a>
       <h2>Developing in Docker</h2>
-      <p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
+      <p>
+        Use the <code>docker-compose</code> environment to start working with
+        Monasca in minutes.
+        <a href="{{ '/docs/docker.html' | relative_url }}">More...</a>
+      </p>
     </div>
   </div>
 </div>
