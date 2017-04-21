@@ -23,7 +23,9 @@ Features:
 
 ## Architecture
 
-![Monasca architecture diagram][2]
+<img class="img-responsive"
+     src="{{ '/assets/images/architecture.svg' | relative_url }}"
+     alt="Monasca architecture diagram">
 
 ## Community
 
@@ -54,9 +56,8 @@ Several overviews of Monasca can be found at the following:
 Monasca is licensed under the [Apache 2.0 license][7].
 
 [1]: https://governance.openstack.org/tc/reference/projects/
-[2]: {{ '/assets/images/architecture.png' | relative_url }}
-[3]: https://www.openstack.org/videos/austin-2016/monasca-bootcamp
-[4]: https://www.openstack.org/videos/tokio-2015/tokyo-3230
-[5]: https://www.openstack.org/videos/paris-2014/monasca-deep-dive-monitoring-at-scale
-[6]: https://www.openstack.org/videos/tokio-2015/elk-and-monasca-crossing-logging-as-an-openstack-service
-[7]: http://www.apache.org/licenses/LICENSE-2.0
+[2]: https://www.openstack.org/videos/austin-2016/monasca-bootcamp
+[3]: https://www.openstack.org/videos/tokio-2015/tokyo-3230
+[4]: https://www.openstack.org/videos/paris-2014/monasca-deep-dive-monitoring-at-scale
+[5]: https://www.openstack.org/videos/tokio-2015/elk-and-monasca-crossing-logging-as-an-openstack-service
+[6]: http://www.apache.org/licenses/LICENSE-2.0
