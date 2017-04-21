@@ -23,9 +23,9 @@ Features:
 
 ## Architecture
 
-<img class="img-responsive"
-     src="{{ '/assets/images/architecture.svg' | relative_url }}"
-     alt="Monasca architecture diagram">
+<object class="img-responsive"
+        data="{{ '/assets/images/architecture.svg' | relative_url }}"
+        alt="Monasca architecture diagram">
 
 ## Community
 

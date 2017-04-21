@@ -87,7 +87,8 @@ body {
 }
 
 .monasca-header-large .jumbotron .container h1 {
-  font-size: 16vmin;
+  font-size: 7vmax;
+  margin-bottom: 0;
 }
 
 .featured {
@@ -167,6 +168,7 @@ body {
 
 .content {
   padding-bottom: 2em;
+  font-weight: 300;
 }
 
 .dropdown-menu {

@@ -21,6 +21,9 @@
    inkscape:export-ydpi="120.8996">
   <defs
      id="defs4">
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900)
+    </style>
     <marker
        inkscape:stockid="Arrow2Mend"
        orient="auto"
