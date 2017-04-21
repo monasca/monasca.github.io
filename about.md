@@ -46,14 +46,14 @@ Many major companies are also involved in developing or deploying Monasca:
 
 Several overviews of Monasca can be found at the following:
 
-- [Monasca Bootcamp][3] - Austin OpenStack Summit, 2016
-- [Introducing Using Monasca for Production OpenStack Monitoring][4] - Tokyo OpenStack Summit, 2015
-- [Monasca Deep Dive][5] - Paris OpenStack Summit, 2014
-- [ELK and Monasca Crossing: Logging as an OpenStack Service][6] - Paris OpenStack Summit, 2014
+- [Monasca Bootcamp][2] - Austin OpenStack Summit, 2016
+- [Introducing Using Monasca for Production OpenStack Monitoring][3] - Tokyo OpenStack Summit, 2015
+- [Monasca Deep Dive][4] - Paris OpenStack Summit, 2014
+- [ELK and Monasca Crossing: Logging as an OpenStack Service][5] - Paris OpenStack Summit, 2014
 
 ## Licensing
 
-Monasca is licensed under the [Apache 2.0 license][7].
+Monasca is licensed under the [Apache 2.0 license][6].
 
 [1]: https://governance.openstack.org/tc/reference/projects/
 [2]: https://www.openstack.org/videos/austin-2016/monasca-bootcamp
