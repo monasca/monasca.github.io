@@ -21,12 +21,6 @@ Features:
  * alarming and notification engines output to email, PagerDuty, webhooks,
    Slack, and HipChat
 
-## Architecture
-
-<object class="img-responsive"
-        data="{{ '/assets/images/architecture.svg' | relative_url }}"
-        alt="Monasca architecture diagram">
-
 ## Community
 
 Monasca discussion usually occurs on IRC at irc.freenode.net #openstack-monasca

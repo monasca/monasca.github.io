@@ -21,7 +21,9 @@
    inkscape:export-ydpi="120.8996">
   <defs
      id="defs4">
-    <style type="text/css">
+    <style
+       type="text/css"
+       id="style4">
         @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900)
     </style>
     <marker
@@ -843,8 +845,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="490.5659"
-     inkscape:cy="303.03648"
+     inkscape:cx="259.78485"
+     inkscape:cy="302.97103"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -856,8 +858,8 @@
      inkscape:object-nodes="true"
      inkscape:snap-smooth-nodes="true"
      showguides="true"
-     inkscape:window-width="1964"
-     inkscape:window-height="1125"
+     inkscape:window-width="1973"
+     inkscape:window-height="1252"
      inkscape:window-x="2049"
      inkscape:window-y="63"
      inkscape:window-maximized="0"
@@ -1215,7 +1217,7 @@
            x="368.99573"
            y="623.50104"
            id="tspan5088"
-           style="-inkscape-font-specification:'Roboto, Light';font-family:Roboto;font-weight:300;font-style:normal;font-stretch:normal;font-variant:normal;font-size:17.5px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;">Monasca REST API</tspan></tspan></text>
+           style="-inkscape-font-specification:'Roboto, Light';font-family:Roboto;font-weight:300;font-style:normal;font-stretch:normal;font-variant:normal;font-size:17.5px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%;fill:#000000;">Monasca REST API</tspan></tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4669)"
        d="m 597.87224,888.86399 c 0,87.15221 108.95629,87.15221 108.95629,87.15221"
