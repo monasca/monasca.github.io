@@ -10,10 +10,6 @@ Monasca Architecture
         data="{{ '/assets/images/architecture.svg' | relative_url }}"
         alt="Monasca architecture diagram"></object>
 
-<img class="img-responsive"
-     data="{{ '/assets/images/architecture.png' | relative_url }}"
-     alt="Monasca architecture diagram">
-
 Components
 ----------
 
