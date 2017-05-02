@@ -52,7 +52,7 @@ Integrations with other tools:
 [4]: https://github.com/openstack/monasca-notification
 [5]: https://github.com/openstack/monasca-agent
 [6]: https://github.com/openstack/monasca-log-api
-[7]: https://github.com/openstack/monasca-aggregator
+[7]: https://github.com/monasca/monasca-aggregator
 [8]: https://github.com/monasca/monasca-docker
 [9]: https://github.com/monasca/monasca-helm
 [10]: https://github.com/openstack/puppet-monasca
