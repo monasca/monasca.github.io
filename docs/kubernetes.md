@@ -10,7 +10,7 @@ autodetection on Prometheus endpoints to scrape metrics from and send into the M
 
 <img class="img-responsive"
         src="{{ '/assets/images/kubernetes_agent.png' | relative_url }}"
-        alt="Monasca architecture diagram"/>
+        alt="Kubernetes monitoring architecture diagram"/>
 
 ### Daemonset Monasca Agent
 
