@@ -41,9 +41,9 @@ Client libraries:
 
 Integrations with other tools:
  * [`grafana`][21]: Forked version of Grafana that adds support for Keystone authentication
- * [`monasca-grafana-datasource`][16]: adds Monasca support to Grafana
- * [`monasca-grafana-app`][17]: adds additional Monasca
- * [`monasca-kibana-plugin`][18]
+ * [`monasca-grafana-datasource`][16]: Monasca data source for Grafana
+ * [`monasca-grafana-app`][17]: Application plugin for Grafana
+ * [`monasca-kibana-plugin`][18]: Keystone authentication support and multi-tenancy for Kibana 4.6.x
  * [`monasca-ui`][19]: Monasca UI for [OpenStack Horizon][20]
 
 [1]: https://github.com/openstack/monasca-api
