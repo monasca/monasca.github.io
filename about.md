@@ -28,13 +28,15 @@ Monasca discussion usually occurs on IRC at irc.freenode.net #openstack-monasca
 Many major companies are also involved in developing or deploying Monasca:
 
  * Hewlett-Packard Enterprise
- * Time Warner Cable (TWC)
+ * Charter Communications
  * Fujitsu
  * Cisco
  * Cray
  * Rackspace
  * SAP
  * NEC
+ * SUSE
+ * StackHPC
 
 ## Presentations
 
