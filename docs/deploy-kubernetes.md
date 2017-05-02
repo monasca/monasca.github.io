@@ -16,7 +16,9 @@ More detailed configuration for installing Monasca can be found in the charts' [
 ## Default Grafana graphs
 
 Grafana is deployed when bringing up Monasca and by default is configured with the Monasca datasource. Default
-dashboards are also created for Deployments, Namespaces, Pod, Daemonset and Nodes.
+dashboards are also created on install for Deployments, Namespaces, Pod, Daemonset and Nodes.
+
+Along with that a Monasca App is installed that can be used to view/create/modify Monasca alarms and notifications.
 
 Grafana can be accessed by port-forwarding the grafana service to localhost.
 
@@ -28,8 +30,32 @@ $ kubectl port-forward {{ grafana_pod_name_from_output_above }} -n monitoring 30
 
 After the above is set up you can visit [grafana][4] with the default credentials mini-mon/password.
 
+<div class="row">
+  <div class="col-xs-6 col-md-4">
+    <a href="#" class="thumbnail">
+      <img class="img-responsive"
+           src="{{ '/assets/images/grafana_deployment.png' | relative_url }}"
+           alt="Grafana deployment diagram"/>
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-4">
+    <a href="#" class="thumbnail">
+      <img class="img-responsive"
+           src="{{ '/assets/images/grafana_pod.png' | relative_url }}"
+           alt="Grafana pod diagram"/>
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-4">
+    <a href="#" class="thumbnail">
+      <img class="img-responsive"
+           src="{{ '/assets/images/grafana_monasca_app.png' | relative_url }}"
+           alt="Grafana Monasca app diagram"/>
+    </a>
+  </div>  
+</div>
+
 ## Future Work
-* Expand on Default graphs that are being created
+* Expand on default graphs that are being created
 * Include default Kubernetes alarms on deploy
 * Intergrate Helm work into official charts
 
