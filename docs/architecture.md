@@ -23,7 +23,7 @@ Main components:
  * [`monasca-agent`][5]: Collects metrics from a node, service, application,
    Prometheus endpoint, ...
  * [`monasca-log-api`][6]: API for working with log data in Monasca
- * [`monasca-transform`][7]: Transforms and aggregates metrics
+ * [`monasca-aggregator`][7]: Near real-time continuous aggregation of Monasca metrics
 
 Deployment methods:
  * [`monasca-docker`][8]: Docker containers and the `docker-compose` development
@@ -40,6 +40,7 @@ Client libraries:
    instrumented applications to Monasca
 
 Integrations with other tools:
+ * [`grafana`][21]: Forked version of Grafana that adds support for Keystone authentication
  * [`monasca-grafana-datasource`][16]: adds Monasca support to Grafana
  * [`monasca-grafana-app`][17]: adds additional Monasca
  * [`monasca-kibana-plugin`][18]
@@ -51,7 +52,7 @@ Integrations with other tools:
 [4]: https://github.com/openstack/monasca-notification
 [5]: https://github.com/openstack/monasca-agent
 [6]: https://github.com/openstack/monasca-log-api
-[7]: https://github.com/openstack/monasca-transform
+[7]: https://github.com/openstack/monasca-aggregator
 [8]: https://github.com/monasca/monasca-docker
 [9]: https://github.com/monasca/monasca-helm
 [10]: https://github.com/openstack/puppet-monasca
@@ -65,3 +66,4 @@ Integrations with other tools:
 [18]: https://github.com/openstack/monasca-kibana-plugin
 [19]: https://github.com/openstack/monasca-ui
 [20]: https://wiki.openstack.org/wiki/Horizon
+[21]: https://github.com/sapcc/grafana/tree/keystone
