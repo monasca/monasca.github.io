@@ -8,41 +8,48 @@
     - header: Getting Started
     - text: Overview
       href: /docs/index.html
-    - text: Getting Started
-      href: /docs/getting-started.html
-    - divider: true
-    - header: Features
-    - text: Alarms
-      href: /docs/alarms.html
-    - text: Aggregation
-      href: /docs/aggregation.html
-    - text: Logging
-      href: /docs/logging.html
+    - text: About
+      href: /about.html
+    - text: Architecture
+      href: /docs/architecture.html
+    #- text: Getting Started
+    #  href: /docs/getting-started.html
+    #- divider: true
+    #- header: Features
+    #- text: Alarms
+    #  href: /docs/alarms.html
+    #- text: Aggregation
+    #  href: /docs/aggregation.html
+    #- text: Logging
+    #  href: /docs/logging.html
 
     - break: true
     - header: Environments
-    - text: OpenStack
-      href: /docs/openstack.html
-    - text: Docker
-      href: /docs/docker.html
+    #- text: OpenStack
+    #  href: /docs/openstack.html
+    #- text: Docker
+    #  href: /docs/docker.html
     - text: Kubernetes
       href: /docs/kubernetes.html
-    - divider: true
-    - header: Instrumentation
-    - text: Monasca Agent
-      href: /docs/agent.html
-    - text: Prometheus
-      href: /docs/prometheus.html
-    - text: StatsD
-      href: /docs/statsd.html
+    #- divider: true
+    - header: Deployment
+    - text: Kubernetes
+      href: /docs/deploy-kubernetes.html
+    - text: Docker (dev)
+      href: /docs/deploy-docker.html
+    #- divider: true
+    #- header: Instrumentation
+    #- text: Monasca Agent
+    #  href: /docs/agent.html
+    #- text: Prometheus
+    #  href: /docs/prometheus.html
+    #- text: StatsD
+    #  href: /docs/statsd.html
 
+    #- text: Contributing
+    #  href: /docs/contributing.html
+    #- divider: true
     - break: true
-    - header: Development
-    - text: Architecture
-      href: /docs/architecture.html
-    - text: Contributing
-      href: /docs/contributing.html
-    - divider: true
     - header: External Links
     - text: OpenStack
       exthref: http://openstack.org
