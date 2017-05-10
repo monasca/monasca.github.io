@@ -34,6 +34,8 @@ Deployment methods:
    modules for deployment in an OpenStack environment
  * [`rpm-packaging`][22]: RPM spec file templates and tooling for
    building OpenStack packages for RPM based distributions
+ * [Devstack][26] may also be a valuable reference for development and as an 
+   example of how to configure the set of Monasca services.
 
 Client libraries:
  * [`python-monascaclient`][14]: CLI and Python library for interating with the
@@ -47,6 +49,9 @@ Integrations with other tools:
  * [`monasca-grafana-app`][17]: Application plugin for Grafana
  * [`monasca-ui`][19]: Monasca UI for [OpenStack Horizon][20]
  * [`monasca-kibana-plugin`][18]: Keystone authentication support and multi-tenancy for Kibana 4.6.x
+ * [`monasca-transform`][23]: Transformation and aggregation of data in Monasca
+ * [`monasca-ceilometer`][24]: Plugin and storage driver for Ceilometer to send 
+   samples to Monasca, also known as [Ceilosca][25]
 
 [1]: https://github.com/openstack/monasca-api
 [2]: https://github.com/openstack/monasca-persister
@@ -70,3 +75,7 @@ Integrations with other tools:
 [20]: https://wiki.openstack.org/wiki/Horizon
 [21]: https://github.com/sapcc/grafana/tree/keystone
 [22]: https://github.com/openstack/rpm-packaging
+[23]: https://github.com/openstack/monasca-transform
+[24]: https://github.com/openstack/monasca-ceilometer
+[25]: https://wiki.openstack.org/wiki/Ceilosca
+[26]: https://github.com/openstack/monasca-api/blob/master/devstack/README.md
