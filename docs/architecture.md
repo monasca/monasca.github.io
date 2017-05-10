@@ -32,7 +32,7 @@ Deployment methods:
  * [`puppet-monasca`][10]: puppet modules for deploying Monasca in OpenStack
  * [`os_monasca`][11], [`os_monasca-agent`][12], [`os_monasca-ui`][13]: Ansible
    modules for deployment in an OpenStack environment
- * ['RPM Packaging for OpenStack'][22]: RPM spec file templates and tooling for
+ * [`RPM Packaging for OpenStack`][22]: RPM spec file templates and tooling for
    building OpenStack packages for RPM based distributions
 
 Client libraries:
