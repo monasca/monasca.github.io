@@ -32,6 +32,8 @@ Deployment methods:
  * [`puppet-monasca`][10]: puppet modules for deploying Monasca in OpenStack
  * [`os_monasca`][11], [`os_monasca-agent`][12], [`os_monasca-ui`][13]: Ansible
    modules for deployment in an OpenStack environment
+ * ['RPM Packaging for OpenStack'][22]: RPM spec file templates and tooling for
+   building OpenStack packages for RPM based distributions
 
 Client libraries:
  * [`python-monascaclient`][14]: CLI and Python library for interating with the
@@ -43,8 +45,8 @@ Integrations with other tools:
  * [`grafana`][21]: Forked version of Grafana that adds support for Keystone authentication
  * [`monasca-grafana-datasource`][16]: Monasca data source for Grafana
  * [`monasca-grafana-app`][17]: Application plugin for Grafana
- * [`monasca-kibana-plugin`][18]: Keystone authentication support and multi-tenancy for Kibana 4.6.x
  * [`monasca-ui`][19]: Monasca UI for [OpenStack Horizon][20]
+ * [`monasca-kibana-plugin`][18]: Keystone authentication support and multi-tenancy for Kibana 4.6.x
 
 [1]: https://github.com/openstack/monasca-api
 [2]: https://github.com/openstack/monasca-persister
@@ -67,3 +69,4 @@ Integrations with other tools:
 [19]: https://github.com/openstack/monasca-ui
 [20]: https://wiki.openstack.org/wiki/Horizon
 [21]: https://github.com/sapcc/grafana/tree/keystone
+[22]: https://github.com/openstack/rpm-packaging
