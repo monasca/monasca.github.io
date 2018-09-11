@@ -5,9 +5,9 @@ hosted via github pages on [monasca.io][2]
 
 # Quick Start
 
-To install Monasca on a running Kubernetes cluster follow the following steps: 
+To install Monasca on a running Kubernetes cluster follow the following steps:
 {% highlight bash %}
-helm repo add monasca http://monasca.io/monasca-helm-repo
+helm repo add monasca http://monasca.io/monasca-helm
 helm install monasca/monasca --name monasca --namespace monitoring
 {% endhighlight %}
 
@@ -51,7 +51,7 @@ After the above is set up you can visit [grafana][4] with the default credential
            src="{{ '/assets/images/grafana_monasca_app.png' | relative_url }}"
            alt="Grafana Monasca app diagram"/>
     </a>
-  </div>  
+  </div>
 </div>
 
 ## Future Work
