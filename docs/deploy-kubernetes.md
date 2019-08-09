@@ -7,7 +7,7 @@ hosted via github pages on [monasca.io][2]
 
 To install Monasca on a running Kubernetes cluster follow the following steps:
 {% highlight bash %}
-helm repo add monasca http://monasca.io/monasca-helm
+helm repo add monasca https://raw.githubusercontent.com/monasca/monasca-helm/gh-pages/
 helm install monasca/monasca --name monasca --namespace monitoring
 {% endhighlight %}
 
