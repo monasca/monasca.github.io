@@ -23,7 +23,7 @@ Features:
 
 ## Community
 
-Monasca discussion usually occurs on IRC at irc.freenode.net #openstack-monasca
+Monasca discussion usually occurs on IRC at OFTC #openstack-monasca
 
 Many major companies are also involved in developing or deploying Monasca:
 
